@@ -43,6 +43,7 @@ export const DiscoverWorkIconStyled = styled(DiscoverWorkIcon)`
   fill: snow;
   cursor: pointer;
   font-size: 5rem;
+  
 `
 
 export const Image = styled.img`
@@ -53,4 +54,10 @@ export const Image = styled.img`
   height: auto;
   width: 100%;
   max-width: calc(340px + 15vw);
+  
+  @media (max-width: 800px)  {
+    left:auto;
+    right:auto;
+    
+  }
 `
