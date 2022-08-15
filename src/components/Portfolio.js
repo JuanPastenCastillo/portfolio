@@ -6,6 +6,7 @@ import pomodoro from "../images/pomodoro.webp"
 import calculator from "../images/calculator.webp"
 import markdownPreviewer from "../images/markdownPreviewer.webp"
 import randomQuote from "../images/randomQuote.webp"
+import personalPortfoliov1 from "../images/personalPortfoliov1.webp"
 
 const firstProject = {
   title: "Pomodoro",
@@ -138,6 +139,31 @@ const fourProject = {
   imageOfProject: { randomQuote },
   url: "https://random-quote-chi.vercel.app/"
 }
+const fifthProject = {
+  title: "Personal portfolio 1.0",
+  whenWasMade: "Oct—2020",
+  description: [
+    {
+      users: [
+        "This webpage show all the project done only with HTML, CSS, Javascript, GIt and Github",
+      ]
+    },
+    {
+      code: [
+        "All donde with HTML, CSS and Javascript vanilla"
+      ]
+    }
+  ],
+  technoligiesUsed: [
+    "HTML",
+    "CSS",
+    "Javascript",
+    "Git",
+    "Github",
+  ],
+  imageOfProject: { personalPortfoliov1 },
+  url: "https://juanpastencastillo.github.io/Personal-Portfolio/"
+}
 
 
 const Portfolio = () => {
@@ -169,6 +195,7 @@ const Portfolio = () => {
         <LayoutSingleProjectPortfolio allProps={secondProject} />
         <LayoutSingleProjectPortfolio allProps={thirdProject} />
         <LayoutSingleProjectPortfolio allProps={fourProject} />
+        <LayoutSingleProjectPortfolio allProps={fifthProject} />
       </PortfolioStyled>
       <FinishPage></FinishPage>
       

@@ -45,7 +45,6 @@ export const WasMade = styled.div`
   transform: translateX(-100%) rotate(-90deg);
   transform-origin: right;
   left: 15px;
-  top: 650px;
   font-size: calc(0.9rem + 0.9vw);
 `
 
