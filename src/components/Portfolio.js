@@ -7,8 +7,41 @@ import calculator from "../images/calculator.webp"
 import markdownPreviewer from "../images/markdownPreviewer.webp"
 import randomQuote from "../images/randomQuote.webp"
 import personalPortfoliov1 from "../images/personalPortfoliov1.webp"
+import clientBill from "../images/clientBillProject.webp"
 
-const firstProject = {
+const clientBillProject = {
+  title: "Client Bill",
+  whenWasMade: "Sept—2022",
+  description: [
+    {
+      users: [
+        "The user can move through the application selecting: upgrade transaction fee, choosing currency to pay.",
+        "Button is disable until the user accept in the checkbox they cannot be change the option selected",
+      ]
+    },
+    {
+      code: [
+        "Was not used third party library",
+        "Responsive design",
+        "Animation of spinning for waiting purposes",
+        
+      ]
+    }
+  ],
+  technoligiesUsed: [
+    "HTML",
+    "CSS",
+    "Javascript",
+    "React",
+    "Git",
+    "Github",
+    "Vercel"
+  ],
+  imageOfProject: { clientBill },
+  url: "https://client-billing-public.vercel.app/"
+}
+
+const pomodoroProject = {
   title: "Pomodoro",
   whenWasMade: "Aug—2022",
   description: [
@@ -41,7 +74,7 @@ const firstProject = {
   imageOfProject: { pomodoro },
   url: "https://pomodoro-react-hazel.vercel.app/"
 }
-const secondProject = {
+const calculatorProject = {
   title: "Calculator",
   whenWasMade: "Aug—2022",
   description: [
@@ -71,7 +104,7 @@ const secondProject = {
   imageOfProject: { calculator },
   url: "https://calculator-react-nine.vercel.app/"
 }
-const thirdProject = {
+const mkdownLivePreviewerProject = {
   title: "Markdown live previewer",
   whenWasMade: "Aug—2022",
   description: [
@@ -106,7 +139,7 @@ const thirdProject = {
   imageOfProject: { markdownPreviewer },
   url: "https://markdown-live-previewer-two.vercel.app/"
 }
-const fourProject = {
+const randomQuoteProject = {
   title: "Random quote generator",
   whenWasMade: "Aug—2022",
   description: [
@@ -139,7 +172,7 @@ const fourProject = {
   imageOfProject: { randomQuote },
   url: "https://random-quote-chi.vercel.app/"
 }
-const fifthProject = {
+const ppv1Project = {
   title: "Personal portfolio 1.0",
   whenWasMade: "Oct—2020",
   description: [
@@ -184,18 +217,18 @@ const Portfolio = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top:0,
-      // behavior:"smooth"
     })
   }
   
   return (
     <>
       <PortfolioStyled id="portfolio">
-        <LayoutSingleProjectPortfolio allProps={firstProject} />
-        <LayoutSingleProjectPortfolio allProps={secondProject} />
-        <LayoutSingleProjectPortfolio allProps={thirdProject} />
-        <LayoutSingleProjectPortfolio allProps={fourProject} />
-        <LayoutSingleProjectPortfolio allProps={fifthProject} />
+        <LayoutSingleProjectPortfolio allProps={clientBillProject} />
+        <LayoutSingleProjectPortfolio allProps={pomodoroProject} />
+        <LayoutSingleProjectPortfolio allProps={calculatorProject} />
+        <LayoutSingleProjectPortfolio allProps={mkdownLivePreviewerProject} />
+        <LayoutSingleProjectPortfolio allProps={randomQuoteProject} />
+        <LayoutSingleProjectPortfolio allProps={ppv1Project} />
       </PortfolioStyled>
       <FinishPage></FinishPage>
       
