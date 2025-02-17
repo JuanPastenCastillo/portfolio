@@ -1,45 +1,11 @@
-import React, {useState, useEffect} from "react"
-import { PortfolioStyled } from "../styles/PortfolioStyled.js"
-import LayoutSingleProjectPortfolio from "./PortfolioComponents/LayoutSingleProjectPortfolio.js"
-import { FinishPage, ButtonToTop } from "../styles/PortfolioStyled.js"
-import pomodoro from "../images/pomodoro.webp"
+import React, { useEffect, useState } from "react"
 import calculator from "../images/calculator.webp"
 import markdownPreviewer from "../images/markdownPreviewer.webp"
-import randomQuote from "../images/randomQuote.webp"
 import personalPortfoliov1 from "../images/personalPortfoliov1.webp"
-import clientBill from "../images/clientBillProject.webp"
-
-const clientBillProject = {
-  title: "Client Bill",
-  whenWasMade: "Sept—2022",
-  description: [
-    {
-      users: [
-        "The user can move through the application selecting: upgrade transaction fee, choosing currency to pay.",
-        "Button is disable until the user accept in the checkbox they cannot be change the option selected",
-      ]
-    },
-    {
-      code: [
-        "Was not used third party library",
-        "Responsive design",
-        "Animation of spinning for waiting purposes",
-        
-      ]
-    }
-  ],
-  technoligiesUsed: [
-    "HTML",
-    "CSS",
-    "Javascript",
-    "React",
-    "Git",
-    "Github",
-    "Vercel"
-  ],
-  imageOfProject: { clientBill },
-  url: "https://client-billing-public.vercel.app/"
-}
+import pomodoro from "../images/pomodoro.webp"
+import randomQuote from "../images/randomQuote.webp"
+import { ButtonToTop, FinishPage, PortfolioStyled } from "../styles/PortfolioStyled.js"
+import LayoutSingleProjectPortfolio from "./PortfolioComponents/LayoutSingleProjectPortfolio.js"
 
 const pomodoroProject = {
   title: "Pomodoro",
@@ -52,25 +18,14 @@ const pomodoroProject = {
         "The user can see the current state and time left in the tab of the browser.",
         "Exist a button to start the application",
         "Existe a button to reset the application to his default values.",
-        "When the application start the button for change values for break and session are disabled.",
+        "When the application start the button for change values for break and session are disabled."
       ]
     },
     {
-      code: [
-        "Library «moment» was used for formatted the number.",
-        "Audio tag was used to retrieve información of sound from internet."
-      ]
+      code: ["Library «moment» was used for formatted the number.", "Audio tag was used to retrieve información of sound from internet."]
     }
   ],
-  technoligiesUsed: [
-    "HTML",
-    "CSS",
-    "Javascript",
-    "React",
-    "Git",
-    "Github",
-    "Vercel"
-  ],
+  technoligiesUsed: ["HTML", "CSS", "Javascript", "React", "Git", "Github", "Vercel"],
   imageOfProject: { pomodoro },
   url: "https://pomodoro-react-hazel.vercel.app/"
 }
@@ -86,21 +41,10 @@ const calculatorProject = {
       ]
     },
     {
-      code: [
-        "Styled components used in separate files",
-        "High use of useReducer."
-      ]
+      code: ["Styled components used in separate files", "High use of useReducer."]
     }
   ],
-  technoligiesUsed: [
-    "HTML",
-    "CSS",
-    "Javascript",
-    "React",
-    "Git",
-    "Github",
-    "Vercel"
-  ],
+  technoligiesUsed: ["HTML", "CSS", "Javascript", "React", "Git", "Github", "Vercel"],
   imageOfProject: { calculator },
   url: "https://calculator-react-nine.vercel.app/"
 }
@@ -112,8 +56,7 @@ const mkdownLivePreviewerProject = {
       users: [
         "Can write markdown and immediately see a preview of the that.",
         "The previewer of the text shows the transformation of the markdown inmediately.",
-        "The previewer and the markdown input box can be maximized with toggle buttons.",
-
+        "The previewer and the markdown input box can be maximized with toggle buttons."
       ]
     },
     {
@@ -122,20 +65,11 @@ const mkdownLivePreviewerProject = {
         "Used svg icons in react components.",
         "Used «react-markdown» library to make the logic behhind the transformation from user input to the markdown preview.",
         "Used «react-syntax-highlighter» library to highlight parts of the markdown preview that are code.",
-        "Use styled components with props.",
-        
+        "Use styled components with props."
       ]
     }
   ],
-  technoligiesUsed: [
-    "HTML",
-    "CSS",
-    "Javascript",
-    "React",
-    "Git",
-    "Github",
-    "Vercel"
-  ],
+  technoligiesUsed: ["HTML", "CSS", "Javascript", "React", "Git", "Github", "Vercel"],
   imageOfProject: { markdownPreviewer },
   url: "https://markdown-live-previewer-two.vercel.app/"
 }
@@ -147,7 +81,7 @@ const randomQuoteProject = {
       users: [
         "Display one random quote first time user the app and when click in the button «new quote».",
         "Have a social media button to share the quote. In this case was used twitter and tumblr.",
-        "Color of some components change when the button is clicked. All are equal.",
+        "Color of some components change when the button is clicked. All are equal."
       ]
     },
     {
@@ -160,15 +94,7 @@ const randomQuoteProject = {
       ]
     }
   ],
-  technoligiesUsed: [
-    "HTML",
-    "CSS",
-    "Javascript",
-    "React",
-    "Git",
-    "Github",
-    "Vercel"
-  ],
+  technoligiesUsed: ["HTML", "CSS", "Javascript", "React", "Git", "Github", "Vercel"],
   imageOfProject: { randomQuote },
   url: "https://random-quote-chi.vercel.app/"
 }
@@ -177,27 +103,16 @@ const ppv1Project = {
   whenWasMade: "Oct—2020",
   description: [
     {
-      users: [
-        "This webpage show all the project done only with HTML, CSS, Javascript, GIt and Github",
-      ]
+      users: ["This webpage show all the project done only with HTML, CSS, Javascript, GIt and Github"]
     },
     {
-      code: [
-        "All donde with HTML, CSS and Javascript vanilla"
-      ]
+      code: ["All donde with HTML, CSS and Javascript vanilla"]
     }
   ],
-  technoligiesUsed: [
-    "HTML",
-    "CSS",
-    "Javascript",
-    "Git",
-    "Github",
-  ],
+  technoligiesUsed: ["HTML", "CSS", "Javascript", "Git", "Github"],
   imageOfProject: { personalPortfoliov1 },
   url: "https://juanpastencastillo.github.io/Personal-Portfolio/"
 }
-
 
 const Portfolio = () => {
   const [showButton, setShowButton] = useState(false)
@@ -213,17 +128,16 @@ const Portfolio = () => {
     window.addEventListener("scroll", toggleShowButton)
     return () => window.removeEventListener("scroll", toggleShowButton)
   }, [])
-  
+
   const scrollToTop = () => {
     window.scrollTo({
-      top:0,
+      top: 0
     })
   }
-  
+
   return (
     <>
-      <PortfolioStyled id="portfolio">
-        <LayoutSingleProjectPortfolio allProps={clientBillProject} />
+      <PortfolioStyled id='portfolio'>
         <LayoutSingleProjectPortfolio allProps={pomodoroProject} />
         <LayoutSingleProjectPortfolio allProps={calculatorProject} />
         <LayoutSingleProjectPortfolio allProps={mkdownLivePreviewerProject} />
@@ -231,12 +145,8 @@ const Portfolio = () => {
         <LayoutSingleProjectPortfolio allProps={ppv1Project} />
       </PortfolioStyled>
       <FinishPage></FinishPage>
-      
-      {showButton && (
-        
-        <ButtonToTop onClick={scrollToTop} ></ButtonToTop>
-      )}
-      
+
+      {showButton && <ButtonToTop onClick={scrollToTop}></ButtonToTop>}
     </>
   )
 }
